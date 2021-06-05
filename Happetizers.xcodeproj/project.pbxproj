@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9ACD266BA50B0001BAAA /* HappetizersApp.swift */; };
-		AC4B9AD0266BA50B0001BAAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9ACF266BA50B0001BAAA /* ContentView.swift */; };
+		AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9ACF266BA50B0001BAAA /* AppetizerTabView.swift */; };
 		AC4B9AD2266BA50C0001BAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4B9AD1266BA50C0001BAAA /* Assets.xcassets */; };
 		AC4B9AD5266BA50C0001BAAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4B9AD4266BA50C0001BAAA /* Preview Assets.xcassets */; };
+		AC4B9AE0266BBC5C0001BAAA /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9ADF266BBC5C0001BAAA /* AppetizerListView.swift */; };
+		AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AE2266BBC6E0001BAAA /* AccountView.swift */; };
+		AC4B9AE6266BBC760001BAAA /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AE5266BBC760001BAAA /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC4B9ACA266BA50B0001BAAA /* Happetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B9ACD266BA50B0001BAAA /* HappetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappetizersApp.swift; sourceTree = "<group>"; };
-		AC4B9ACF266BA50B0001BAAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC4B9ACF266BA50B0001BAAA /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		AC4B9AD1266BA50C0001BAAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4B9AD4266BA50C0001BAAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC4B9AD6266BA50C0001BAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4B9ADF266BBC5C0001BAAA /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		AC4B9AE2266BBC6E0001BAAA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		AC4B9AE5266BBC760001BAAA /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				AC4B9ACD266BA50B0001BAAA /* HappetizersApp.swift */,
-				AC4B9ACF266BA50B0001BAAA /* ContentView.swift */,
+				AC4B9ACF266BA50B0001BAAA /* AppetizerTabView.swift */,
 				AC4B9AD1266BA50C0001BAAA /* Assets.xcassets */,
 				AC4B9AD6266BA50C0001BAAA /* Info.plist */,
 				AC4B9AD3266BA50C0001BAAA /* Preview Content */,
+				AC4B9ADF266BBC5C0001BAAA /* AppetizerListView.swift */,
+				AC4B9AE2266BBC6E0001BAAA /* AccountView.swift */,
+				AC4B9AE5266BBC760001BAAA /* OrderView.swift */,
 			);
 			path = Happetizers;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC4B9AD0266BA50B0001BAAA /* ContentView.swift in Sources */,
+				AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */,
+				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
+				AC4B9AE0266BBC5C0001BAAA /* AppetizerListView.swift in Sources */,
+				AC4B9AE6266BBC760001BAAA /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
