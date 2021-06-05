@@ -1,0 +1,54 @@
+{
+  "request": [
+    {
+      "calories": 300,
+      "description": "This perfectly thin cut just melts in your mouth.",
+      "price": 8.99,
+      "name": "Asian Flank Steak",
+      "imageURL": "https:\/\/seanallen-course-backend.herokuapp.com\/images\/appetizers\/asian-flank-steak.jpg",
+      "id": 1,
+      "protein": 14,
+      "carbs": 0
+    },
+    {
+      "calories": 450,
+      "description": "Seasoned shrimp from the depths of the Atlantic Ocean.",
+      "price": 6.99,
+      "name": "Blackened Shrimp",
+      "id": 2,
+      "imageURL": "https:\/\/seanallen-course-backend.herokuapp.com\/images\/appetizers\/blackened-shrimp.jpg",
+      "protein": 4,
+      "carbs": 3
+    },
+    {
+      "calories": 800,
+      "description": "The tasty bites of chicken have just the right amount of kick to them.",
+      "price": 7.49,
+      "name": "Buffalo Chicken Bites",
+      "imageURL": "https:\/\/seanallen-course-backend.herokuapp.com\/images\/appetizers\/buffalo-chicken-bites.jpg",
+      "id": 3,
+      "protein": 5,
+      "carbs": 22
+    },
+    {
+      "calories": 480,
+      "description": "These won't last 10 seconds once they hit the table.",
+      "price": 12.99,
+      "name": "Chicken Avocado Spring Roll",
+      "imageURL": "https:\/\/seanallen-course-backend.herokuapp.com\/images\/appetizers\/chicken-avocado-spring-roll.jpg",
+      "id": 4,
+      "carbs": 19,
+      "protein": 7
+    },
+    {
+      "calories": 580,
+      "description": "It's really hard to keep coming up with these descriptions.",
+      "price": 8.99,
+      "name": "Chicken Dumplings",
+      "imageURL": "https:\/\/seanallen-course-backend.herokuapp.com\/images\/appetizers\/chicken-dumplings.jpg",
+      "id": 5,
+      "protein": 4,
+      "carbs": 14
+    },
+  ]
+}

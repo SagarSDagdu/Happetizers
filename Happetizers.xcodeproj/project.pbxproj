@@ -15,6 +15,8 @@
 		AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AE2266BBC6E0001BAAA /* AccountView.swift */; };
 		AC4B9AE6266BBC760001BAAA /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AE5266BBC760001BAAA /* OrderView.swift */; };
 		AC4B9AEA266BC19A0001BAAA /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AE9266BC19A0001BAAA /* Appetizer.swift */; };
+		AC4B9AEE266BC31C0001BAAA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AED266BC31C0001BAAA /* MockData.swift */; };
+		AC4B9AF1266BC34D0001BAAA /* mock_appetizers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AC4B9AE2266BBC6E0001BAAA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		AC4B9AE5266BBC760001BAAA /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		AC4B9AE9266BC19A0001BAAA /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		AC4B9AED266BC31C0001BAAA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_appetizers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				AC4B9ADF266BBC5C0001BAAA /* AppetizerListView.swift */,
 				AC4B9AE2266BBC6E0001BAAA /* AccountView.swift */,
 				AC4B9AE5266BBC760001BAAA /* OrderView.swift */,
+				AC4B9AED266BC31C0001BAAA /* MockData.swift */,
+				AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */,
 			);
 			path = Happetizers;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 			files = (
 				AC4B9AD5266BA50C0001BAAA /* Preview Assets.xcassets in Resources */,
 				AC4B9AD2266BA50C0001BAAA /* Assets.xcassets in Resources */,
+				AC4B9AF1266BC34D0001BAAA /* mock_appetizers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +170,7 @@
 				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
 				AC4B9AE0266BBC5C0001BAAA /* AppetizerListView.swift in Sources */,
+				AC4B9AEE266BC31C0001BAAA /* MockData.swift in Sources */,
 				AC4B9AE6266BBC760001BAAA /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
