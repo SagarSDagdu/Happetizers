@@ -17,6 +17,7 @@
 		AC4B9AEA266BC19A0001BAAA /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AE9266BC19A0001BAAA /* Appetizer.swift */; };
 		AC4B9AEE266BC31C0001BAAA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AED266BC31C0001BAAA /* MockData.swift */; };
 		AC4B9AF1266BC34D0001BAAA /* mock_appetizers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */; };
+		AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AC4B9AE9266BC19A0001BAAA /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		AC4B9AED266BC31C0001BAAA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_appetizers.json; sourceTree = "<group>"; };
+		AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				AC4B9AE5266BBC760001BAAA /* OrderView.swift */,
 				AC4B9AED266BC31C0001BAAA /* MockData.swift */,
 				AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */,
+				AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */,
 			);
 			path = Happetizers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				AC4B9AEA266BC19A0001BAAA /* Appetizer.swift in Sources */,
 				AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */,
+				AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */,
 				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
 				AC4B9AE0266BBC5C0001BAAA /* AppetizerListView.swift in Sources */,

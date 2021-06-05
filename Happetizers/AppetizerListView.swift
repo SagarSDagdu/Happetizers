@@ -12,10 +12,7 @@ struct AppetizerListView: View {
         NavigationView {
             List {
                 ForEach(MockData.mockAppetizers()) { appetizer in
-                    VStack {
-                        Text(appetizer.name)
-                        Text("Protein: \(appetizer.protein)")
-                    }
+                    AppetizerListCell(appetizer: appetizer)
                 }
             }.navigationTitle("🍗 Appetizers")
         }
