@@ -21,3 +21,8 @@ struct Appetizer: Decodable {
     let carbs: Int
 }
 
+// Helper struct to parse response
+struct AppetizerResponse: Decodable {
+    let request: [Appetizer]
+}
+
