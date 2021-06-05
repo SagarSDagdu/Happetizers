@@ -10,7 +10,14 @@ import SwiftUI
 struct AppetizerListView: View {
     var body: some View {
         NavigationView {
-            Text("Appetizer List View").navigationTitle("🍗 Appetizers")
+            List {
+                ForEach(MockData.mockAppetizers()) { appetizer in
+                    VStack {
+                        Text(appetizer.name)
+                        Text("Protein: \(appetizer.protein)")
+                    }
+                }
+            }.navigationTitle("🍗 Appetizers")
         }
     }
 }
