@@ -18,6 +18,8 @@
 		AC4B9AEE266BC31C0001BAAA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AED266BC31C0001BAAA /* MockData.swift */; };
 		AC4B9AF1266BC34D0001BAAA /* mock_appetizers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */; };
 		AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */; };
+		AC71B157266E587C007DFC5E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B156266E587C007DFC5E /* NetworkManager.swift */; };
+		AC71B15B266E61C2007DFC5E /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AC4B9AED266BC31C0001BAAA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_appetizers.json; sourceTree = "<group>"; };
 		AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		AC71B156266E587C007DFC5E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		AC4B9ACC266BA50B0001BAAA /* Happetizers */ = {
 			isa = PBXGroup;
 			children = (
+				AC71B155266E585A007DFC5E /* Network */,
 				AC4B9AE8266BC1070001BAAA /* Models */,
 				AC4B9ACD266BA50B0001BAAA /* HappetizersApp.swift */,
 				AC4B9ACF266BA50B0001BAAA /* AppetizerTabView.swift */,
@@ -78,6 +83,7 @@
 				AC4B9AED266BC31C0001BAAA /* MockData.swift */,
 				AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */,
 				AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */,
+				AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */,
 			);
 			path = Happetizers;
 			sourceTree = "<group>";
@@ -96,6 +102,14 @@
 				AC4B9AE9266BC19A0001BAAA /* Appetizer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AC71B155266E585A007DFC5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AC71B156266E587C007DFC5E /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC71B157266E587C007DFC5E /* NetworkManager.swift in Sources */,
 				AC4B9AEA266BC19A0001BAAA /* Appetizer.swift in Sources */,
 				AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */,
+				AC71B15B266E61C2007DFC5E /* AppetizerListViewModel.swift in Sources */,
 				AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */,
 				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
