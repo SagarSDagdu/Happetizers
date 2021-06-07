@@ -15,12 +15,14 @@ class AppetizerListViewModel: ObservableObject {
     
     func getAppetizers() {
         NetworkManager.shared.getAppetizers { result in
-            switch result {
-            case .success(let appetizers):
-                self.appetizers = appetizers
-            case .failure(let error):
-                print("Error: \(error)")
-                self.error = error
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let appetizers):
+                    self.appetizers = appetizers
+                case .failure(let error):
+                    print("Error: \(error)")
+                    self.error = error
+                }
             }
         }
     }
