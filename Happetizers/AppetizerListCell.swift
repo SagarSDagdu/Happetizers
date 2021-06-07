@@ -12,9 +12,22 @@ struct AppetizerListCell: View {
     let appetizer: Appetizer
     
     var body: some View {
-        VStack {
-            Text("Name: \(appetizer.name)")
-            Text("Protein: \(appetizer.protein)")
+        HStack {
+            Image("asian-flank-steak")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 80)
+                .cornerRadius(8)
+            VStack(alignment: .leading) {
+                Text(appetizer.name)
+                    .font(.title2)
+                    .fontWeight(.medium)
+                Text("$\(appetizer.price, specifier: "%.2f")")
+                    .font(.title2)
+                    .fontWeight(.medium)
+                    .foregroundColor(.gray)
+            }
+            .padding(.leading)
         }
     }
 }
