@@ -11,7 +11,7 @@ class AppetizerListViewModel: ObservableObject {
     
     @Published var appetizers: [Appetizer] = []
     
-    @Published var error: APError?
+    @Published var alertItem: AlertItem?
     
     func getAppetizers() {
         NetworkManager.shared.getAppetizers { result in
@@ -21,7 +21,7 @@ class AppetizerListViewModel: ObservableObject {
                     self.appetizers = appetizers
                 case .failure(let error):
                     print("Error: \(error)")
-                    self.error = error
+                    self.alertItem = AlertItem.getAlertItem(for: error)
                 }
             }
         }
