@@ -12,14 +12,21 @@ struct AppetizerListView: View {
     @StateObject var appetizerListViewModel = AppetizerListViewModel()
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(appetizerListViewModel.appetizers) { appetizer in
-                    AppetizerListCell(appetizer: appetizer)
-                }
-            }.navigationTitle("🍗 Appetizers")
-        }.onAppear() {
-            appetizerListViewModel.getAppetizers()
+        ZStack {
+            NavigationView {
+                List {
+                    ForEach(appetizerListViewModel.appetizers) { appetizer in
+                        AppetizerListCell(appetizer: appetizer)
+                    }
+                }.navigationTitle("🍗 Appetizers")
+            }.onAppear() {
+                appetizerListViewModel.getAppetizers()
+            }
+            
+            if appetizerListViewModel.isLoading {
+                LoadingView()
+            }
+            
         }.alert(item: $appetizerListViewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         }

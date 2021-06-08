@@ -19,6 +19,8 @@
 		AC4B9AF1266BC34D0001BAAA /* mock_appetizers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */; };
 		AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */; };
 		AC5A37C9266F9D0500F4B65C /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A37C8266F9D0500F4B65C /* AlertItem.swift */; };
+		AC5A37CE266FA78900F4B65C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A37CD266FA78900F4B65C /* LoadingView.swift */; };
+		AC5A37D3266FA7D800F4B65C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A37D2266FA7D800F4B65C /* Color+Ext.swift */; };
 		AC71B157266E587C007DFC5E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B156266E587C007DFC5E /* NetworkManager.swift */; };
 		AC71B15B266E61C2007DFC5E /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		AC4B9AF0266BC34D0001BAAA /* mock_appetizers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_appetizers.json; sourceTree = "<group>"; };
 		AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		AC5A37C8266F9D0500F4B65C /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		AC5A37CD266FA78900F4B65C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AC5A37D2266FA7D800F4B65C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		AC71B156266E587C007DFC5E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,8 @@
 		AC4B9ACC266BA50B0001BAAA /* Happetizers */ = {
 			isa = PBXGroup;
 			children = (
+				AC5A37D1266FA7CC00F4B65C /* Extensions */,
+				AC5A37CB266FA77600F4B65C /* UIKit */,
 				AC71B155266E585A007DFC5E /* Network */,
 				AC4B9AE8266BC1070001BAAA /* Models */,
 				AC4B9ACD266BA50B0001BAAA /* HappetizersApp.swift */,
@@ -105,6 +111,30 @@
 				AC5A37C8266F9D0500F4B65C /* AlertItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AC5A37CB266FA77600F4B65C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A37CC266FA77C00F4B65C /* UIViews */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AC5A37CC266FA77C00F4B65C /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A37CD266FA78900F4B65C /* LoadingView.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		AC5A37D1266FA7CC00F4B65C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A37D2266FA7D800F4B65C /* Color+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AC71B155266E585A007DFC5E /* Network */ = {
@@ -189,7 +219,9 @@
 				AC71B157266E587C007DFC5E /* NetworkManager.swift in Sources */,
 				AC4B9AEA266BC19A0001BAAA /* Appetizer.swift in Sources */,
 				AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */,
+				AC5A37D3266FA7D800F4B65C /* Color+Ext.swift in Sources */,
 				AC71B15B266E61C2007DFC5E /* AppetizerListViewModel.swift in Sources */,
+				AC5A37CE266FA78900F4B65C /* LoadingView.swift in Sources */,
 				AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */,
 				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
