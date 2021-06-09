@@ -13,17 +13,18 @@ struct AccountView: View {
     
     var body: some View {
         NavigationView {
-            
             Form {
                 Section(header: Text("Personal Info")) {
                     TextField("First Name", text: $viewModel.firstName)
+                        .disableAutocorrection(true)
                     TextField("Last Name", text: $viewModel.lastName)
+                        .disableAutocorrection(true)
                     TextField("Email", text: $viewModel.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                     DatePicker("Birthday", selection: $viewModel.birthday, displayedComponents: .date)
                     Button {
-                        print("save")
+                        viewModel.saveData()
                     } label: {
                         Text("Save Changes")
                     }
@@ -34,6 +35,9 @@ struct AccountView: View {
                     Toggle("Frequent Refills", isOn: $viewModel.frequentRefills)
                 }.toggleStyle(SwitchToggleStyle(tint: Color.brandPrimary))
             }.navigationTitle("℀ Account")
+            .alert(item: $viewModel.alertItem) { alertItem in
+                Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+            }
         }
     }
 }

@@ -28,6 +28,7 @@
 		AC71B1672670B3D2007DFC5E /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B1662670B3D2007DFC5E /* APButton.swift */; };
 		AC71B16A2670B45D007DFC5E /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B1692670B45D007DFC5E /* XDismissButton.swift */; };
 		AC71B16D26710442007DFC5E /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B16C26710442007DFC5E /* AccountViewModel.swift */; };
+		AC71B1702671056D007DFC5E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B16F2671056D007DFC5E /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		AC71B1662670B3D2007DFC5E /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		AC71B1692670B45D007DFC5E /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		AC71B16C26710442007DFC5E /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		AC71B16F2671056D007DFC5E /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		AC5A37D1266FA7CC00F4B65C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC71B16F2671056D007DFC5E /* String+Ext.swift */,
 				AC5A37D2266FA7D800F4B65C /* Color+Ext.swift */,
 			);
 			path = Extensions;
@@ -243,6 +246,7 @@
 				AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */,
 				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC71B161266FB97A007DFC5E /* RemoteImage.swift in Sources */,
+				AC71B1702671056D007DFC5E /* String+Ext.swift in Sources */,
 				AC71B16426708143007DFC5E /* AppetizerDetailView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
 				AC4B9AE0266BBC5C0001BAAA /* AppetizerListView.swift in Sources */,

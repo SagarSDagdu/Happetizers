@@ -17,4 +17,20 @@ final class AccountViewModel: ObservableObject {
     @Published var extraNapkins = false
     @Published var frequentRefills = false
     
+    @Published var alertItem: AlertItem?
+
+    func saveData() {
+        guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+            alertItem = AlertContext.invalidFormData
+            return
+        }
+        
+        guard email.isValidEmail else {
+            alertItem = AlertContext.invalidEmail
+            return
+        }
+        
+        print("Save")
+    }
+    
 }

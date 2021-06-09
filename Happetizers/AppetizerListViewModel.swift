@@ -25,7 +25,7 @@ class AppetizerListViewModel: ObservableObject {
                     self?.appetizers = appetizers
                 case .failure(let error):
                     print("Error: \(error)")
-                    self?.alertItem = AlertItem.getAlertItem(for: error)
+                    self?.alertItem = AlertContext.getAlertItem(for: error)
                 }
             }
         }
