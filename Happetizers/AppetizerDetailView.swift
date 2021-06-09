@@ -34,13 +34,7 @@ struct AppetizerDetailView: View {
             Button {
                 
             } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .frame(width: 280, height: 50)
-                    .background(Color.brandPrimary)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
             }.padding()
         }
         .frame(width: 300, height: 600, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -50,16 +44,7 @@ struct AppetizerDetailView: View {
         .overlay(Button(action: {
             isDetailVisible = false
         }, label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
-                    .opacity(0.6)
-                Image(systemName: "xmark")
-                    .frame(width: 40, height: 40)
-                    .imageScale(.small)
-                    .foregroundColor(.black)
-            }
+            XDismissButton()
         }), alignment: .topTrailing)
     }
 }
