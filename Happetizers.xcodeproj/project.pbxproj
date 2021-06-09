@@ -24,6 +24,7 @@
 		AC71B157266E587C007DFC5E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B156266E587C007DFC5E /* NetworkManager.swift */; };
 		AC71B15B266E61C2007DFC5E /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */; };
 		AC71B161266FB97A007DFC5E /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B160266FB97A007DFC5E /* RemoteImage.swift */; };
+		AC71B16426708143007DFC5E /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B16326708143007DFC5E /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AC71B156266E587C007DFC5E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		AC71B160266FB97A007DFC5E /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		AC71B16326708143007DFC5E /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				AC4B9AF3266BC7610001BAAA /* AppetizerListCell.swift */,
 				AC71B15A266E61C2007DFC5E /* AppetizerListViewModel.swift */,
 				AC71B160266FB97A007DFC5E /* RemoteImage.swift */,
+				AC71B16326708143007DFC5E /* AppetizerDetailView.swift */,
 			);
 			path = Happetizers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */,
 				AC4B9AD0266BA50B0001BAAA /* AppetizerTabView.swift in Sources */,
 				AC71B161266FB97A007DFC5E /* RemoteImage.swift in Sources */,
+				AC71B16426708143007DFC5E /* AppetizerDetailView.swift in Sources */,
 				AC4B9ACE266BA50B0001BAAA /* HappetizersApp.swift in Sources */,
 				AC4B9AE0266BBC5C0001BAAA /* AppetizerListView.swift in Sources */,
 				AC4B9AEE266BC31C0001BAAA /* MockData.swift in Sources */,
