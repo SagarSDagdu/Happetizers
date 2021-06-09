@@ -9,25 +9,19 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State var firstName = ""
-    @State var lastName = ""
-    @State var email = ""
-    @State var birthday = Date()
-    
-    @State var extraNapkins = false
-    @State var frequentRefills = false
+    @StateObject var viewModel = AccountViewModel()
     
     var body: some View {
         NavigationView {
             
             Form {
                 Section(header: Text("Personal Info")) {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First Name", text: $viewModel.firstName)
+                    TextField("Last Name", text: $viewModel.lastName)
+                    TextField("Email", text: $viewModel.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
-                    DatePicker("Birthday", selection: $birthday, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $viewModel.birthday, displayedComponents: .date)
                     Button {
                         print("save")
                     } label: {
@@ -36,8 +30,8 @@ struct AccountView: View {
                 }
                 
                 Section(header: Text("Requests")) {
-                    Toggle("Extra Napkins", isOn: $extraNapkins)
-                    Toggle("Frequent Refills", isOn: $frequentRefills)
+                    Toggle("Extra Napkins", isOn: $viewModel.extraNapkins)
+                    Toggle("Frequent Refills", isOn: $viewModel.frequentRefills)
                 }.toggleStyle(SwitchToggleStyle(tint: Color.brandPrimary))
             }.navigationTitle("℀ Account")
         }
