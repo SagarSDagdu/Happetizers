@@ -11,20 +11,33 @@ struct AppetizerListView: View {
     
     @StateObject var appetizerListViewModel = AppetizerListViewModel()
     
+    @State var selectedAppetizer: Appetizer?
+    
+    @State var isDetailViewOpened = false
+    
     var body: some View {
         ZStack {
             NavigationView {
                 List {
                     ForEach(appetizerListViewModel.appetizers) { appetizer in
-                        AppetizerListCell(appetizer: appetizer)
+                        AppetizerListCell(appetizer: appetizer).onTapGesture {
+                            isDetailViewOpened = true
+                            selectedAppetizer = appetizer
+                        }
                     }
                 }.navigationTitle("🍗 Appetizers")
             }.onAppear() {
                 appetizerListViewModel.getAppetizers()
             }
+            .disabled(isDetailViewOpened)
+            .blur(radius: isDetailViewOpened ? 20 : 0)
             
             if appetizerListViewModel.isLoading {
                 LoadingView()
+            }
+            
+            if isDetailViewOpened {
+                AppetizerDetailView(appetizer: selectedAppetizer!, isDetailVisible: $isDetailViewOpened)
             }
             
         }.alert(item: $appetizerListViewModel.alertItem) { alertItem in

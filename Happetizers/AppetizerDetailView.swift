@@ -11,10 +11,11 @@ struct AppetizerDetailView: View {
     
     let appetizer: Appetizer
     
+    @Binding var isDetailVisible: Bool
+    
     var body: some View {
         VStack {
-            Image("asian-flank-steak")
-                .resizable()
+            AppetizerImageView(url: appetizer.imageURL)
                 .frame(width: 300, height: 250)
                 .aspectRatio(contentMode: .fit)
             Text(appetizer.name)
@@ -47,7 +48,7 @@ struct AppetizerDetailView: View {
         .cornerRadius(12)
         .shadow(radius: 20)
         .overlay(Button(action: {
-            
+            isDetailVisible = false
         }, label: {
             ZStack {
                 Circle()
@@ -82,6 +83,6 @@ struct NutritionView: View {
 
 struct AppetizerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.mockAppetizers().first!)
+        AppetizerDetailView(appetizer: MockData.mockAppetizers().first!, isDetailVisible: .constant(true))
     }
 }
