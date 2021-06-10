@@ -29,6 +29,7 @@
 		AC71B16A2670B45D007DFC5E /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B1692670B45D007DFC5E /* XDismissButton.swift */; };
 		AC71B16D26710442007DFC5E /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B16C26710442007DFC5E /* AccountViewModel.swift */; };
 		AC71B1702671056D007DFC5E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71B16F2671056D007DFC5E /* String+Ext.swift */; };
+		AC80C67726724D59000D15F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80C67626724D59000D15F8 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AC71B1692670B45D007DFC5E /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		AC71B16C26710442007DFC5E /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		AC71B16F2671056D007DFC5E /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		AC80C67626724D59000D15F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				AC4B9AE9266BC19A0001BAAA /* Appetizer.swift */,
 				AC5A37C8266F9D0500F4B65C /* AlertItem.swift */,
+				AC80C67626724D59000D15F8 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				AC4B9AE3266BBC6E0001BAAA /* AccountView.swift in Sources */,
 				AC5A37D3266FA7D800F4B65C /* Color+Ext.swift in Sources */,
 				AC71B15B266E61C2007DFC5E /* AppetizerListViewModel.swift in Sources */,
+				AC80C67726724D59000D15F8 /* User.swift in Sources */,
 				AC71B1672670B3D2007DFC5E /* APButton.swift in Sources */,
 				AC5A37CE266FA78900F4B65C /* LoadingView.swift in Sources */,
 				AC4B9AF4266BC7610001BAAA /* AppetizerListCell.swift in Sources */,
