@@ -13,6 +13,8 @@ struct AppetizerDetailView: View {
     
     @Binding var isDetailVisible: Bool
     
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         VStack {
             AppetizerImageView(url: appetizer.imageURL)
@@ -32,7 +34,8 @@ struct AppetizerDetailView: View {
             }
             Spacer()
             Button {
-                
+                order.add(appetizer)
+                isDetailVisible = false
             } label: {
                 APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
             }.padding()

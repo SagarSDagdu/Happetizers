@@ -20,7 +20,7 @@ struct AppetizerTabView: View {
                 Text("Account")
             }
             
-            OrderView(orderedAppetizers: Array(MockData.mockAppetizers()[0...3])).tabItem {
+            OrderView().tabItem {
                 Image(systemName: "bag")
                 Text("Order")
             }

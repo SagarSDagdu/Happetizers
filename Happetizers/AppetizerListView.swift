@@ -15,6 +15,8 @@ struct AppetizerListView: View {
     
     @State var isDetailViewOpened = false
     
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         ZStack {
             NavigationView {
