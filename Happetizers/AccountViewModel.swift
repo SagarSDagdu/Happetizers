@@ -10,6 +10,8 @@ import SwiftUI
 
 final class AccountViewModel: ObservableObject {
     
+    @AppStorage("user") var userData: Data?
+    
     @Published var user = User(firstName: "", lastName: "", email: "", birthday: Date())
     
     @Published var alertItem: AlertItem?
@@ -25,7 +27,25 @@ final class AccountViewModel: ObservableObject {
             return
         }
         
-        print("Save")
+        do {
+            let data = try JSONEncoder().encode(user)
+            userData = data
+            alertItem = AlertContext.userSaveSuccess
+        } catch {
+            print("User save failure: \(error)")
+            alertItem = AlertContext.userSaveFailure
+        }
+    }
+    
+    func retrieveUser() {
+        guard let userData = userData else { return }
+        
+        do {
+            let user = try JSONDecoder().decode(User.self, from: userData)
+            self.user = user
+        } catch {
+            return
+        }
     }
     
 }
